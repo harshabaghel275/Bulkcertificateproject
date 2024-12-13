@@ -1,0 +1,282 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <!-- ========== Meta Tags ========== -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="description" content="Examin - Education and LMS Template" />
+
+    <!-- ========== Page Title ========== -->
+    <title> Welcome To Certificate Exam</title>
+
+    <!-- ========== Favicon Icon ========== -->
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon" />
+
+    <!-- ========== Start Stylesheet ========== -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="assets/css/flaticon-set.css" rel="stylesheet" />
+    <link href="assets/css/elegant-icons.css" rel="stylesheet" />
+    <link href="assets/css/magnific-popup.css" rel="stylesheet" />
+    <link href="assets/css/owl.carousel.min.css" rel="stylesheet" />
+    <link href="assets/css/owl.theme.default.min.css" rel="stylesheet" />
+    <link href="assets/css/animate.css" rel="stylesheet" />
+    <link href="assets/css/bootsnav.css" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet">
+    <link href="assets/css/responsive.css" rel="stylesheet" />
+    <!-- ========== End Stylesheet ========== -->
+
+    <!--[if lte IE 9]>
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+    <![endif]-->
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+       <div class="se-pre-con"></div>
+    <!-- Preloader Ends -->
+
+    <!-- Start Header Top 
+    ============================================= -->
+    <div class="top-bar-area address-two-lines bg-dark text-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 address-info">
+                    <div class="info box">
+                        <ul>
+                            <li>
+                                <span><i class="fas fa-map"></i> Address</span>Punit college
+                            </li>
+                            <li>
+                                <span><i class="fas fa-envelope-open"></i> Email</span>harshabaghel97@gmail.com
+                            </li>
+                            <li>
+                                <span><i class="fas fa-phone"></i> Contact</span>+9799210731
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+               
+                <div class="user-login text-end col-lg-4">
+    <span style="color:white"><%= uname %></span>
+   
+</div>
+                 <div class="user-login text-end col-lg-2">
+  <a href="admin/LOGIN.aspx">Admin</a>
+   
+</div>
+            </div>
+        </div>
+    </div>
+    <!-- End Header Top -->
+
+    <!-- Header 
+    ============================================= -->
+    <header>
+        <!-- Start Navigation -->
+        <nav class="navbar mobile-sidenav inc-shape navbar-sticky navbar-default validnavs dark">
+
+            <!-- Start Top Search -->
+            <div class="top-search">
+                <div class="container-xl">
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="fa fa-search"></i></span>
+                        <input type="text" class="form-control" placeholder="Search">
+                        <span class="input-group-addon close-search"><i class="fa fa-times"></i></span>
+                    </div>
+                </div>
+            </div>
+            <!-- End Top Search -->
+
+            <div class="container d-flex justify-content-between align-items-center">
+                
+                
+                <div class="navbar-brand-left">
+                    <!-- Start Header Navigation -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <a class="navbar-brand" href="index.html">
+                            <img src="assets/img/logo.png" class="logo" alt="Logo">
+                        </a>
+                    </div>
+                    <!-- End Header Navigation -->
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="navbar-menu">
+
+                    <img src="assets/img/logo.png" alt="Logo">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+                        <i class="fa fa-times"></i>
+                    </button>
+                    
+                    <ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
+                        <li class="dropdown">
+                            <a href="home.aspx"  data-toggle="dropdown" >Home</a>
+                           
+                        </li>
+                        <li class="dropdown megamenu-fw">
+                            <a href="About.aspx"  >About</a>
+                            
+                        </li>
+                        <li class="dropdown">
+                            <a href="category.aspx"  data-toggle="dropdown" >Category</a>
+                           
+                        </li>
+                     <li>
+                            <a href="Contact.aspx">contact</a>
+                        </li>
+                        <li>
+                          <a href="register.aspx" class="nav-link">Register /Login</a>
+                        </li>
+                      
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+
+                
+
+                <!-- Start Side Menu -->
+                
+                <!-- End Side Menu -->
+
+                <!-- Main Nav -->
+            </div>   
+            <!-- Overlay screen for menu -->
+            <div class="overlay-screen"></div>
+            <!-- End Overlay screen for menu -->
+
+        </nav>
+        <!-- End Navigation -->
+    </header>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+        <footer class="bg-dark default-padding-top text-light">
+        <div class="container">
+            <div class="f-items">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 item">
+                        <div class="f-item">
+                            <img src="assets/img/logo-light.png" alt="Logo">
+                           <p>
+                            Welcome to Certificat Eexam, your gateway to professional and academic excellence. Our platform offers a wide range of online exams, designed to meet the needs of learners and professionals across various industries.
+                        </p>
+                            <%--<p>
+                            With a user-friendly interface and secure environment, we make it easy for you to take exams from anywhere, at any time. Simply choose your exam, complete it at your convenience, and receive instant results.
+                        </p>--%>
+                            
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-6 item">
+                        <div class="f-item link">
+                            <h4>Links</h4>
+                            <ul>
+                                <li>
+                                    <a href="category.aspx">Category</a>
+                                   
+                                </li>
+                                <li>
+                                    <a href="About.aspx">About</a>
+                                    
+                                </li>
+                                <li>
+                                    <a href="exam.aspx">Exam</a>
+                                    
+                                </li>
+                                <li>
+                                    <a href="home.aspx">Home</a>
+                                    
+                                </li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-6 item">
+                        <div class="f-item link">
+                            <h4>Support</h4>
+                            <ul>
+                                
+                                <li>
+                                    <a href="Contact.aspx">Contact</a>
+                                   
+                                </li>
+                                <li>
+                                    <a href="register.aspx">register</a>
+                                  
+                                </li>
+                                <li>
+                                    <a href="login.aspx">login</a>
+                                    
+                                </li>
+                               
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 item">
+                        <div class="f-item address">
+                            <h4>Address</h4>
+                            <ul>
+                                <li>
+                                    <i class="fas fa-envelope"></i> 
+                                    <p>Email <span><a href="mailto:support@validtheme.com">harshabaghel97@gmail.com</a></span></p>
+                                </li>
+                                <li>
+                                    <i class="fas fa-map"></i> 
+                                    <p>Office <span>123 6th St. Melbourne, FL 32904</span></p>
+                                </li>
+                            </ul>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Start Footer Bottom -->
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <p>&copy; Copyright 2024. All Rights Reserved by <a href="#">harshabaghel</a>
+                    </div>
+                    <div class="col-lg-6 text-end link">
+                        <ul>
+                            <li>
+                                <a href="#">Terms of user</a>
+                            </li>
+                            <li>
+                                <a href="#">License</a>
+                            </li>
+                            <li>
+                                <a href="#">Support</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Footer Bottom -->
+    </footer>
+    </form>
+     <script src="assets/js/jquery-3.7.1.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/jquery.appear.js"></script>
+    <script src="assets/js/jquery.easing.min.js"></script>
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/isotope.pkgd.min.js"></script>
+    <script src="assets/js/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/js/count-to.js"></script>
+    <script src="assets/js/loopcounter.js"></script>
+    <script src="assets/js/jquery.nice-select.min.js"></script>
+    <script src="assets/js/bootsnav.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
